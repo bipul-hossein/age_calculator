@@ -1,12 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <div>
+        <h1>Age Calculator</h1>
+        <div>
+            <table>
+                <tbody>
+                    <tr>
+
+                        <td valign="middle">
+                            <select class="calendarDateInput" style="font-size:16px;" id="today_Day_ID"
+                                onchange="today_Object.changeDay(this)">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                                <option>13</option>
+                                <option>14</option>
+                                <option>15</option>
+                                <option>16</option>
+                                <option>17</option>
+                                <option>18</option>
+                                <option>19</option>
+                                <option>20</option>
+                                <option>21</option>
+                                <option>22</option>
+                                <option>23</option>
+                                <option>24</option>
+                                <option>25</option>
+                                <option>26</option>
+                                <option selected="">27</option>
+                                <option>28</option>
+                                <option>29</option>
+                                <option>30</option>
+                                <option>31</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="calendarDateInput" style="font-size:16px;" id="today_Month_ID"
+                                onchange="today_Object.changeMonth(this)">
+                                <option value="0">Jan</option>
+                                <option value="1">Feb</option>
+                                <option value="2">Mar</option>
+                                <option value="3">Apr</option>
+                                <option value="4" selected="">May</option>
+                                <option value="5">Jun</option>
+                                <option value="6">Jul</option>
+                                <option value="7">Aug</option>
+                                <option value="8">Sep</option>
+                                <option value="9">Oct</option>
+                                <option value="10">Nov</option>
+                                <option value="11">Dec</option>
+                            </select>
+                        </td>
+                        <td valign="middle">
+                            <input class="calendarDateInput" style="font-size:16px;" type="text" id="today_Year_ID"
+                                size="6" maxlength="6" title="Year" value="2023"
+                                onkeypress="return YearDigitsOnly(window.event)" onkeyup="today_Object.checkYear(this)"
+                                onblur="today_Object.fixYear(this)">
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td valign="middle">
+                            <select class="calendarDateInput" style="font-size:16px;" id="today_Day_ID"
+                                onchange="today_Object.changeDay(this)">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                                <option>13</option>
+                                <option>14</option>
+                                <option>15</option>
+                                <option>16</option>
+                                <option>17</option>
+                                <option>18</option>
+                                <option>19</option>
+                                <option>20</option>
+                                <option>21</option>
+                                <option>22</option>
+                                <option>23</option>
+                                <option>24</option>
+                                <option>25</option>
+                                <option>26</option>
+                                <option selected="">27</option>
+                                <option>28</option>
+                                <option>29</option>
+                                <option>30</option>
+                                <option>31</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="calendarDateInput" style="font-size:16px;" id="today_Month_ID"
+                                onchange="today_Object.changeMonth(this)">
+                                <option value="0">Jan</option>
+                                <option value="1">Feb</option>
+                                <option value="2">Mar</option>
+                                <option value="3">Apr</option>
+                                <option value="4" selected="">May</option>
+                                <option value="5">Jun</option>
+                                <option value="6">Jul</option>
+                                <option value="7">Aug</option>
+                                <option value="8">Sep</option>
+                                <option value="9">Oct</option>
+                                <option value="10">Nov</option>
+                                <option value="11">Dec</option>
+                            </select>
+                        </td>
+                        <td valign="middle">
+                            <input class="calendarDateInput" style="font-size:16px;" type="text" id="today_Year_ID"
+                                size="6" maxlength="6" title="Year" value="2023"
+                                onkeypress="return YearDigitsOnly(window.event)" onkeyup="today_Object.checkYear(this)"
+                                onblur="today_Object.fixYear(this)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right" valign="middle">&nbsp;</td>
+                        <td valign="middle"> 
+                            <input type="image" value="Calculate"
+                                alt="Calculate" style="margin-top:10px;">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
 </body>
+
 </html>
